@@ -1,11 +1,12 @@
-name = input("Введите цену товара:") #цена товара
-name1 = input("Введите вес товара:") #вес товар
-name2 = input("Сумма средств клиента:") #количество денег
-name3 = float(name2) - (float(name) * float(name1)) #сдача
+
+price = input("Введите цену товара:") #цена товара
+weight = input("Введите вес товара:") #вес товар
+submitted = input("Сумма средств клиента:") #количество денег
+change = float(submitted) - (float(price) * float(weight)) #сдача
 print("Чек")
-print('Цена товара:',name,"Р.За КГ.")
-print('Вес товара:',name1,"КГ.")
-print("Сумма покупки:",(float(name) * float(name1)),"Р.")
-print("Внесёная Сумма:",name2,"Р.")
-print("Сдача:",name3,"Р.")
+print('Цена товара:',price,"Р.За КГ.")
+print('Вес товара:',weight,"КГ.")
+print("Сумма покупки:",(float(price) * float(weight)),"Р.")
+print("Внесёная Сумма:",submitted,"Р.")
+print("Сдача:",change,"Р.")
 
